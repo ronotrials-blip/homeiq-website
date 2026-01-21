@@ -1,0 +1,210 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #fff;
+    color: #222;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #0033cc;
+    /* Electric Blue */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 1.5rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #222;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: #0033cc;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 2rem;
+    background-color: #f9faff;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #0033cc;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #555;
+}
+
+.buttons .btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    margin-right: 1rem;
+    border-radius: 4px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn.primary {
+    background-color: #0033cc;
+    color: #fff;
+    border: none;
+}
+
+.btn.primary:hover {
+    background-color: #002299;
+}
+
+.btn.secondary {
+    background-color: transparent;
+    color: #0033cc;
+    border: 2px solid #0033cc;
+}
+
+.btn.secondary:hover {
+    background-color: #0033cc;
+    color: #fff;
+}
+
+.categories {
+    padding: 2rem;
+    text-align: center;
+}
+
+.categories h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #0033cc;
+}
+
+.categories ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    font-weight: 600;
+    color: #444;
+}
+
+.bundles {
+    padding: 2rem;
+    background-color: #f4f7ff;
+}
+
+.bundles h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #0033cc;
+}
+
+.bundle-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.bundle-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    width: 300px;
+    text-align: center;
+}
+
+.bundle-card h3 {
+    margin-bottom: 1rem;
+    color: #0033cc;
+}
+
+.bundle-card p {
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+.how-it-works {
+    padding: 2rem;
+    text-align: center;
+}
+
+.how-it-works h2 {
+    font-size: 2rem;
+    color: #0033cc;
+    margin-bottom: 1rem;
+}
+
+.how-it-works ol {
+    list-style: decimal inside;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    color: #444;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.why-homeiq {
+    padding: 2rem;
+    background-color: #f9faff;
+    text-align: center;
+}
+
+.why-homeiq h2 {
+    font-size: 2rem;
+    color: #0033cc;
+    margin-bottom: 1rem;
+}
+
+.why-homeiq ul {
+    list-style: none;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    color: #444;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #0033cc;
+    color: white;
+    font-weight: 600;
+}
