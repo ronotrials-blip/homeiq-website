@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HomeIQ - Smart Home Automation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0 20px;
+            background-color: #f9f9f9;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background-color: #007bff;
+            padding: 15px 20px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #cce5ff;
+        }
+
+        .button-container {
+            margin: 30px 0;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 12px 24px;
+            margin-right: 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button.secondary {
+            background-color: transparent;
+            border: 2px solid #007bff;
+            color: #007bff;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+            color: white;
+        }
+
+        button.secondary:hover {
+            background-color: #0056b3;
+            color: white;
+        }
+
+        section {
+            padding: 60px 0;
+            border-bottom: 1px solid #ddd;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        section h2 {
+            margin-top: 0;
+            color: #007bff;
+        }
+
+        /* Contact form styles */
+        form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        form input,
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+            resize: vertical;
+        }
+
+        form button[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        form button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1 onclick="window.scrollTo({top: 0, behavior: 'smooth'});">HomeIQ</h1>
+        <nav>
+            <ul>
+                <li><a href="#home" onclick="scrollToSection(event, 'home')">Home</a></li>
+                <li><a href="#shop" onclick="scrollToSection(event, 'shop')">Shop</a></li>
+                <li><a href="#solutions" onclick="scrollToSection(event, 'solutions')">Solutions</a></li>
+                <li><a href="#services" onclick="scrollToSection(event, 'services')">Services</a></li>
+                <li><a href="#learn" onclick="scrollToSection(event, 'learn')">Learn</a></li>
+                <li><a href="#about" onclick="scrollToSection(event, 'about')">About</a></li>
+                <li><a href="#contact" onclick="scrollToSection(event, 'contact')">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home">
+            <h2>Your Home. Smarter. Safer. Effortless.</h2>
+            <p>Intelligent living solutions tailored for Kenyan homes and developers.</p>
+
+            <div class="button-container">
+                <button onclick="scrollToSection(event, 'solutions')">Explore Smart Solutions</button>
+                <button class="secondary" onclick="scrollToSection(event, 'shop')">Shop Devices</button>
+            </div>
+        </section>
+
+        <!-- Shop Section -->
+        <section id="shop">
+            <h2>Shop Devices</h2>
+            <p>Explore our smart home automation devices designed to make your life easier and your home smarter.</p>
+            <!-- Future: Add product listings here -->
+        </section>
+
+        <!-- Solutions Section -->
+        <section id="solutions">
+            <h2>Solutions</h2>
+            <p>Discover tailored smart home solutions for security, lighting, climate control, and more.</p>
+            <!-- Add content as needed -->
+        </section>
+
+        <!-- Services Section -->
+        <section id="services">
+            <h2>Services</h2>
+            <p>Professional installation, consultation, and support to help you get the most from your smart home.</p>
+            <!-- Add content as needed -->
+        </section>
+
+        <!-- Learn Section -->
+        <section id="learn">
+            <h2>Learn</h2>
+            <p>Resources, guides, and tips to help you understand and maintain your smart home system.</p>
+            <!-- Add content as needed -->
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About</h2>
+            <p>HomeIQ is dedicated to bringing intelligent living solutions to Kenyan homes with a focus on innovation,
+                quality, and service.</p>
+            <!-- Add content as needed -->
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or want to request a custom solution, feel free to reach out!</p>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required />
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your email address" required />
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message here..."
+                    required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <script>
+        function scrollToSection(event, id) {
+            event.preventDefault();
+            const el = document.getElementById(id);
+            if (el) {
+                el.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
+</body>
+
+</html>
